@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>the drop down assignmnet.</h1>
+        <div class="logo animate__animated animate__backInDown">
+            <img src="images/logo.avif" alt="">
+        </div>
+    </header>
+    
+    <div class="searchBox" id="search-box">
+        <div class="searchCompany  animate__animated animate__backInLeft" >
+            <i class="fa-solid fa-car-side"></i>
+            <h3>Search Company</h3>
+            <select name="company" id="company" onchange="modelchange()"></select>
+        </div>
+        <div class="searchModel animate__animated animate__backInDown">
+            <i class="fa-solid fa-car-side"></i>
+            <h3>Search Model</h3>
+            <select name="model" id="model"></select>
+        </div>
+        <div class="searchButton animate__animated animate__backInRight">
+            <i class="fa-solid fa-car-side"></i>
+            <h3>Search Here</h3>
+    
+            <button onclick="finalSearch()" class="btn">Search</button>
+        </div>
+    </div>
+    <div id="show-card" class="showCard unshow">
+    
+    </div>
+    
+    <!-- ////////header complete////////// -->
+    <div class="main" id="show">
+        <div class="cards" id="car-card">
+          
+        </div>
+    
+    </div>
+   
+    <script src="./app.js"></script>
+</body>
+</html>
